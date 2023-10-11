@@ -10,6 +10,8 @@ CREATE TABLE(
 
 /*para fazer o update*/
 UPDATE NOME_DA_TABELA SET campo1 = valor1, campo2 = valor2
+ou
+UPDATE cliente SET nome ='yan' where id = 1;
 
 /*para deletar os intens da tabela*/
 DELETE FROM clientes WHERE id = 1
@@ -21,4 +23,30 @@ SELECT * FROM clientes
 ALTER TABLE clientes
 CHANGE email Email_pessoal VARCHAR(255);
 
- 
+ /*para excluir o banco de dados*/
+drop DATABASE nome do banco
+
+ /*para excluir os registros*/
+TRUNCATE TABLE nome do banco
+
+/*para EXCLUIR UM CAMPO DA TABELA*/
+ALTER TABLE clientes drop COLUMN Email_pessoal
+
+/*inserir dados*/
+
+INSERT INTO cliente (nome, email) VALUES ("JUNIOR", "JULIA","HIGOR")
+
+INSERT INTO cliente (nome, email)
+VALUES
+('Maria', 'maria@gmail.com'),
+('Andre', 'amdre@gmail.com'),
+('Andy', 'andy@gmail.com'),
+
+/*consulta basica*/
+SELECT nome, email from cliente
+
+/*consulta com condição*/
+SELECT nome, email from cliente where idade > 30
+
+/*consulta tudo*/
+SELECT * from clientes

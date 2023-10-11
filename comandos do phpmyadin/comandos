@@ -17,3 +17,8 @@ DELETE FROM clientes WHERE id = 1
 /*para seleciona a tabela ou algum da tabela*/
 SELECT * FROM clientes
 
+/*para ALTERAR A TABELA*/
+ALTER TABLE clientes
+CHANGE email Email_pessoal VARCHAR(255);
+
+ 

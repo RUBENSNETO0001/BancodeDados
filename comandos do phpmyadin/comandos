@@ -1,0 +1,19 @@
+/*para criar abase do banco de dados*/
+CREATE DATABASE tester;
+
+/*tabela com id*/
+CREATE TABLE(
+ Id INT AUTO_INCREMENT PRIMARY KEY, 
+  name VARCHAR(122),   
+     EMAIL VARCHAR(122)
+);
+
+/*para fazer o update*/
+UPDATE NOME_DA_TABELA SET campo1 = valor1, campo2 = valor2
+
+/*para deletar os intens da tabela*/
+DELETE FROM clientes WHERE id = 1
+
+/*para seleciona a tabela ou algum da tabela*/
+SELECT * FROM clientes
+

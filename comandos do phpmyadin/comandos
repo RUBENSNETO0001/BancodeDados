@@ -34,7 +34,9 @@ ALTER TABLE clientes drop COLUMN Email_pessoal
 
 /*inserir dados*/
 
-INSERT INTO cliente (nome, email) VALUES ("JUNIOR", "JULIA","HIGOR")
+INSERT INTO cliente (nome, email) VALUES ("JUNIOR", "junior@gmail.com")
+
+/*inserir novo dados*/
 
 INSERT INTO cliente (nome, email)
 VALUES

@@ -67,3 +67,4 @@ where condição;
 update clientes
 set nome ='mrbeast'
 where id = 1;
+

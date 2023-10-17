@@ -8,10 +8,11 @@ CREATE TABLE(
      EMAIL VARCHAR(122)
 );
 
-/*para fazer o update*/
-UPDATE NOME_DA_TABELA SET campo1 = valor1, campo2 = valor2
-ou
-UPDATE cliente SET nome ='yan' where id = 1;
+/*Adicionar nova coluna apos a tabela criada */
+
+ALTER TABLE nomeDaTabela
+ADD IDADE INT;
+
 
 /*para deletar os intens da tabela*/
 DELETE FROM clientes WHERE id = 1
@@ -52,3 +53,17 @@ SELECT nome, email from cliente where idade > 30
 
 /*consulta tudo*/
 SELECT * from clientes
+
+/*para fazer o update*/
+UPDATE NOME_DA_TABELA SET campo1 = valor1, campo2 = valor2
+ou
+UPDATE cliente SET nome ='yan' where id = 1;
+
+/*update  de 2 formas*/
+update NOME_DA_TABELA
+set coluna1 = novo_valor1, coluna2 = novo_valor2, ...
+where condição;
+
+update clientes
+set nome ='mrbeast'
+where id = 1;

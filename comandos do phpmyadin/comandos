@@ -17,8 +17,6 @@ ADD IDADE INT;
 /*para deletar os intens da tabela*/
 DELETE FROM clientes WHERE id = 1
 
-/*para seleciona a tabela ou algum da tabela*/
-SELECT * FROM clientes
 
 /*para ALTERAR A TABELA*/
 ALTER TABLE clientes

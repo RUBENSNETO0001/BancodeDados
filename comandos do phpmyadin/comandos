@@ -68,3 +68,4 @@ update clientes
 set nome ='mrbeast'
 where id = 1;
 
+DATE = DATA DE NACISMENTO

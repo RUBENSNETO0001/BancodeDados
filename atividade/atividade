@@ -1,0 +1,37 @@
+CREATE DATABASE escola; /*vai criar o banco de dados*/
+
+/*vai criar a tabela dos alunos*/
+CREATE TABLE alunos (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    nome varchar(90),
+    idade int(90),
+    email varchar (100),
+    curso varchar(100));
+
+/*vai adiciona os alunos e caracteristicas como idade*/
+INSERT INTO alunos (nome,idade, email, curso) 
+VALUES
+("JUNIOR",18,"junior@gmail.com", "tecnico de informatica"),
+("ricardo",21,"ricardo@gmail.com", "tecnico de rede"),
+("douglas",24,"douglas@gmail.com", "programador"),
+("gustavo",30,"gusta@gmail.com","infermagem"),
+("peter",45,"peterparker@gmail.com", "tecnico de informatica"),
+("jorge",19,"jorge@gmail.com",  "tecnico de rede"),
+("italo",32,"italo@gmail.com", "robotica");
+
+/*vai alterar a idade do aluno id = 2*/
+update alunos
+set idade = 22
+where id = 2;
+
+/*vai excluir o aluno 1*/
+DELETE FROM alunos WHERE id = 1
+
+/*vai coloca-los em formação descrecente */
+SELECT nome FROM alunos ORDER BY nome DESC;
+
+/*vai mostra os que estão entre 20 e 30 */
+SELECT nome , idade FROM alunos WHERE idade >= 20 AND idade <= 30; 
+
+/*vai coloca-los em formação descrecente com idade, email e curso*/
+SELECT nome, idade, email, curso FROM alunos ORDER BY nome DESC;

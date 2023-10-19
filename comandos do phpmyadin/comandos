@@ -52,6 +52,12 @@ SELECT nome, email from cliente where idade > 30
 /*consulta tudo*/
 SELECT * from clientes
 
+/*seleciona tudo menos alguma coisa como vemos ta negando o teste2*/
+SELECT * FROM usuarios WHERE NOT nome = "teste2";
+
+/*consulta e seleciona entre 20 e 30*/
+SELECT nome , idade FROM alunos WHERE idade >= 20 AND  idade <= 30; 
+
 /*para fazer o update*/
 UPDATE NOME_DA_TABELA SET campo1 = valor1, campo2 = valor2
 ou

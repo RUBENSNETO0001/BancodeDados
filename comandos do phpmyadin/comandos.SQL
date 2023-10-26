@@ -13,7 +13,6 @@ CREATE TABLE(
 ALTER TABLE nomeDaTabela
 ADD IDADE INT;
 
-
 /*para deletar os intens da tabela*/
 DELETE FROM clientes WHERE id = 1
 

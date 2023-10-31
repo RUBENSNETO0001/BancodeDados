@@ -71,4 +71,17 @@ update clientes
 set nome ='mrbeast'
 where id = 1;
 
+/*data de nascimento*/
 DATE = DATA DE NACISMENTO
+
+/*hora*/
+SELECT HOUR('12:30:34') AS HORA, MINUTE('12:30:34') AS MINUTOS, SECOND('12:30:34') AS SEGUNDOS;
+
+/*minutos ou horas em forma de minutos e segundos*/
+SELECT TIMEDIFF('12:35:34', '12:30:46');
+
+/*inner join*/
+SELECT *  
+FROM usuario
+INNER JOIN postagens 
+ON postagens.id_usuario = usuario.id_usuario;

@@ -17,3 +17,5 @@ CREATE TABLE usuario(
 /*USAR O NOT NULL NO NOME*/
 name VARCHAR(122) NOT NULL, 
 
+
+$conecao = new mysqli('localhost' , 'root', '', 'nome_do banco_dados');

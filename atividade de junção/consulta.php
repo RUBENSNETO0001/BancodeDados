@@ -17,4 +17,14 @@ foreach($resultados as $pessoas){
     echo $pessoas['email']. "<br>";
     echo "<br>";
 }
+
+$consulta_sql = $conexao->query("SELECT * FROM usuario");
+
+$um_usuario = $consulta_sql->fetch_assoc();
+
+
+ECHO '<PRE>';
+print_r( $um_usuario);
+ECHO'</PRE>';
+
 ?>

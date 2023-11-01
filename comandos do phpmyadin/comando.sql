@@ -14,6 +14,6 @@ CREATE TABLE usuario(
      endereco_ID INT,
     FOREIGN KEY(endereco_ID) REFERENCES endereco(endereco_ID)
 );
-
-
+/*USAR O NOT NULL NO NOME*/
+name VARCHAR(122) NOT NULL, 
 

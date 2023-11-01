@@ -85,3 +85,4 @@ SELECT *
 FROM usuario
 INNER JOIN postagens 
 ON postagens.id_usuario = usuario.id_usuario;
+

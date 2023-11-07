@@ -1,18 +1,17 @@
-
 <?php 
 
 $nome_servidor = "localhost";
-$usuario = "root";
+$usuario = "SEU_USER";//O USER MANO
 $senha ="";
-$db_nome = "empresa";//NAME FROM BANK DADOS
+$db_nome = "senai";
 
 try{
-    //tente estabelecer a conexão
+   // conection for banc dados
     $conexao = new mysqli($nome_servidor,$usuario, $senha, $db_nome );
-    //so para ve seu deu bom
+// ferificação se ta de boa
     echo 'de certo em';
 }
-//para ve se da error, se der error isso aparece.
+
 catch(Exception $e){
  echo'houve um error no seu banco de dados'. $e->getMessage();
 }

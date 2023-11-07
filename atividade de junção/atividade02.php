@@ -1,7 +1,7 @@
 <?php 
 
 $nome_servidor = "localhost";
-$usuario = "SEU_USER";//O USER MANO
+$usuario = "root";//O USER MANO
 $senha ="";
 $db_nome = "senai";
 
@@ -15,5 +15,20 @@ try{
 catch(Exception $e){
  echo'houve um error no seu banco de dados'. $e->getMessage();
 }
+?>
+<?php
+$nome = "gabigol";
+$email = "gabigol@gmail.com";
+$senha = "1252132132323";
 
+$inserir_dados = $conexao->query("INSERT INTO usuario(nome , senha , email) 
+VALUES ('$nome', '$senha' , '$email')");
+
+if($inserir_dados == true){
+    echo'dados inseridos com sucesso';
+}
+
+else {
+    echo'não ta inserido';
+}
 ?>

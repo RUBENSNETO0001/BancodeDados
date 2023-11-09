@@ -45,3 +45,17 @@ else{
     echo"error";
 }
 ?>
+<?php 
+$id_para_apagar= 4;
+
+
+$deletar_id = $conexao->query("DELETE FROM usuario WHERE
+id = '$id_para_apagar'");
+
+if($deletar_id){
+echo"id deletado com sucesso!";
+}
+else{
+    echo"error ao deletar";
+}
+?>

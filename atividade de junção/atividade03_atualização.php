@@ -25,7 +25,6 @@ VALUES ('$nome', '$senha' , '$email')");
 if($inserir_dados == true){
     echo'dados inseridos com sucesso';
 }
-
 else {
     echo'não ta inserido';
 }

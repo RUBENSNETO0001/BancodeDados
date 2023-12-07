@@ -16,6 +16,7 @@ catch(Exception $e){
  echo'houve um error no seu banco de dados'. $e->getMessage();
 }
 ?>
+
 <?php
 $nome = "gabigol";
 $email = "gabigol@gmail.com";

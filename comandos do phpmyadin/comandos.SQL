@@ -86,3 +86,6 @@ FROM usuario
 INNER JOIN postagens 
 ON postagens.id_usuario = usuario.id_usuario;
 
+/*seleciona todas as com b, vai mudando de letra que ai vai parecer todas com b ou a c d ....*/
+SELECT * FROM aluno WHERE nome LIKE 'b%'; 
+

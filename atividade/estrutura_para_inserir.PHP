@@ -4,7 +4,6 @@
 
 
 <body>
-    <link rel="stylesheet" href="formulario.css">
     <form method="post">
  
     <div>

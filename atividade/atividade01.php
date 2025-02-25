@@ -1,6 +1,4 @@
-
 <?php 
-
 $nome_servidor = "localhost";
 $usuario = "root";
 $senha ="";

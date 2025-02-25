@@ -47,7 +47,6 @@ else{
 <?php 
 $id_para_apagar= 4;
 
-
 $deletar_id = $conexao->query("DELETE FROM usuario WHERE
 id = '$id_para_apagar'");
 

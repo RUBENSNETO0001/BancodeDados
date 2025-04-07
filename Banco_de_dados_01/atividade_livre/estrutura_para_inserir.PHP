@@ -1,8 +1,3 @@
-<?php 
-
-?>
-
-
 <body>
     <form method="post">
  

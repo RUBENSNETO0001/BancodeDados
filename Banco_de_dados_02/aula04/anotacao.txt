@@ -1,0 +1,11 @@
+/*o codigo para inserir dados na tabela*/
+
+INSERT INTO cliente(id, nome, email) 
+VALUES 
+(1,"Matuin", "60pradois@gmail.com"),
+(2,"Telhado", "Telhado30@gmail.com")
+;
+
+/*deletar um campo*/
+
+DELETE FROM nome_da_table where id = 1;

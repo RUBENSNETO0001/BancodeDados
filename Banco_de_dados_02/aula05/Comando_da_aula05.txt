@@ -1,0 +1,51 @@
+SELECT NORMAL{
+
+    isso aqui vai selecionar tudo
+
+SELECT * FROM alunos;
+
+    vai mostra o nome e titulo de professor
+
+SELECT nome , titulacao FROM professores;
+
+    aqui vai mostra o nome e o email que eu quero;
+
+SELECT nome, email FROM alunos;
+
+    aqui vai o nome e a cargo horaria
+
+SELECT carga_horaria, nome FROM disciplinas;
+
+    aqui vai selecionar tudo da tabela notas
+
+SELECT * FROM notas;
+
+    vamos chama apenas o nome e o email do professor
+
+SELECT nome, email FROM professores;
+
+}
+
+SELECT COM WHERE{
+
+    vai selecionar nome e data de data_nascimento com a condicao de data_nascimento depois de 2005 - 01 - 01
+
+SELECT nome, data_nascimento from alunos WHERE data_nascimento >= '2005-01-01';
+
+    vai selecionar os professores que nao tem o mesmo no titulo
+
+select titulacao from professores where titulacao != 'Mestre';
+
+    vai selecionar o nome e a gargo horaria que seje superior a 40
+
+SELECT nome, carga_horaria FROM disciplinas WHERE carga_horaria = 40 or carga_horaria = 60;
+
+    nota e id do aluno com notas de 7 a 9
+
+SELECT nota, id_aluno from notas WHERE nota >= 7 and nota <= 9; 
+
+    nome e email mais so se for sergio e se caso o email for null
+
+SELECT nome, email FROM professores WHERE nome = 'Sérgio oliveira' or email is NULL;
+
+}

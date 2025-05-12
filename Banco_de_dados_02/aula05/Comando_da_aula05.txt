@@ -73,3 +73,33 @@ Liste disciplinas onde o ID seja 2, 4 ou 6.
 
 Liste notas maiores que 7 e menores que 9.
 	[SELECT * FROM notas WHERE nota > 7 OR nota < 9;]
+
+questoes 1 a 14;
+
+1)SELECT * FROM alunos where nome LIKE "ana%";
+
+2)SELECT * FROM alunos where data_nascimento >= '2004-01-01' AND data_nascimento <= '2005-12-31';
+
+3)SELECT * FROM professores WHERE titulacao IN ("MESTRE", "doutor");
+
+4)SELECT * FROM alunos where nome LIKE "%souza";
+
+5)SELECT * FROM alunos where year(data_nascimento) = 2006;
+
+6)SELECT * FROM alunos WHERE nome LIKE 'z%' OR nome LIKE '%z' OR nome LIKE '%z%';
+
+7)SELECT * FROM professores WHERE titulacao NOT IN ("DOUTOR");
+
+8)SELECT COUNT(*) FROM alunos;
+
+9)SELECT AVG(nota) AS nota FROM notas;
+
+10)SELECT SUM(nota) FROM notas;
+
+11)SELECT AVG(nota) AS nota FROM notas WHERE id_disciplina IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)GROUP BY id_disciplina;
+
+12)SELECT id_disciplina, AVG(nota) AS media FROM notas WHERE id_disciplina IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) GROUP BY id_disciplina HAVING AVG(nota) > 7;;
+
+13)SELECT COUNT(*) FROM professores where titulacao like '%';
+
+14)SELECT data_nascimento, COUNT(*) AS qtd_alunos FROM alunos GROUP BY data_nascimento;

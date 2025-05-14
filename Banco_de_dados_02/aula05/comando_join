@@ -1,1 +1,21 @@
-aula: joinas 
+INNER JOIN
+
+SELECT client.id, clientes.nome, vendas.valor
+FROM clientes
+INNER JOIN vendas ON clientes.id = vendas.cliente_id;
+
+LEFT JOIN vendas ON clientes.id = vendas.cliente_id;
+
+RIGHT JOIN vendas ON clientes.id = vendas.cliente_id;
+
+junta tudo, seria o full outer
+
+SELECT clientes.id, clientes.nome, vendas.valor
+FROM clientes
+LEFT JOIN vendas ON clientes.id = vendas.cliente_id
+
+UNION
+
+SELECT clientes.id, clientes.nome, vendas.valor
+FROM clientes
+RIGHT JOIN vendas ON clientes.id = vendas.cliente_id;

@@ -19,3 +19,49 @@ UNION
 SELECT clientes.id, clientes.nome, vendas.valor
 FROM clientes
 RIGHT JOIN vendas ON clientes.id = vendas.cliente_id;
+
+ atividade
+
+Aluno: Rubens Neto Martins Suarez.
+
+Reposta:
+1) 
+SELECT clientes.nome, pedidos.data
+FROM clientes
+INNER JOIN pedidos ON clientes.id = pedidos.id;
+
+2)
+SELECT *
+FROM clientes
+LEFT JOIN pedidos ON clientes.id = pedidos.id;
+
+3)
+SELECT *
+FROM produtos
+LEFT JOIN fornecedores ON produtos.fornecedor_id = fornecedores.id;
+
+4)
+SELECT fornecedores.nome AS nome_fornecedor, produtos.nome AS nome_produto
+FROM fornecedores
+INNER JOIN produtos ON fornecedores.id = produtos.fornecedor_id;
+
+5)
+SELECT fornecedores.nome AS nome_fornecedor, produtos.nome AS nome_produto
+FROM fornecedores
+LEFT JOIN produtos ON fornecedores.id = produtos.fornecedor_id;
+
+6)
+SELECT produtos.nome AS nome_produto, fornecedores.nome AS nome_fornecedor
+FROM produtos
+LEFT JOIN fornecedores ON produtos.fornecedor_id = fornecedores.id
+
+UNION
+
+SELECT produtos.nome AS nome_produto, fornecedores.nome AS nome_fornecedor
+FROM fornecedores
+LEFT JOIN produtos ON fornecedores.id = produtos.fornecedor_id;
+
+7)
+SELECT clientes.nome AS nome_cliente, pedidos.data AS data_pedido
+FROM clientes
+LEFT JOIN pedidos ON clientes.id = pedidos.cliente_id;
